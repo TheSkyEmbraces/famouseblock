@@ -12,7 +12,7 @@ const headerHeight = headerTag.offsetHeight;
 // console.log(mNavMenuBg);
 
 const header = () => {
-  if (pageYOffset >= headerHeight) {
+  if (window.pageYOffset >= headerHeight) {
     headerTag.style.background = "#ffffff";
     logo.setAttribute("src", "assets/images/logo.png");
     headerRight.classList.add("navAction");
@@ -38,8 +38,7 @@ const mNav = () => {
 
 const init = () => {
   mNav();
+  window.addEventListener("scroll", header);
 };
 
 init();
-
-window.addEventListener("scroll", header);
