@@ -346,9 +346,10 @@
 }
 
 .ap-cont {
-  width: 100%;
+  width: 95%;
   max-width: 1300px;
   display: flex;
+  flex-direction: row;
   margin: 0 auto 50px auto;
   // background-color: #161616;
   // box-shadow: 3px 7px 24px -3px rgba(0, 0, 0, 0.15);
@@ -371,7 +372,7 @@
     padding: 0 10px;
     .ap-cont-title {
       h1 {
-        font-size: 4.5rem;
+        font-size: 4rem;
       }
     }
     .ap-cont-cont {
@@ -640,6 +641,24 @@
   .cont01 {
     flex-basis: 100% !important;
     margin: 25px 0 !important;
+  }
+
+  .ap-cont {
+    width: 90% !important;
+    flex-direction: column;
+    .ap-left {
+      flex-basis: 100%;
+    }
+
+    .ap-right {
+      flex-basis: 100%;
+      text-align: center;
+      .ap-cont-title {
+        h1 {
+          font-size: 3.5rem;
+        }
+      }
+    }
   }
 
   .cont02-right {
