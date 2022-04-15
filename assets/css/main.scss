@@ -1,9 +1,12 @@
 @import "./reset";
 @import "./mixin";
 @import "./variables";
-@import "./whitepaper";
 
 // 레이아웃 디자인
+.btn-none-block {
+  display: none;
+}
+
 .common-btn {
   width: 200px;
   height: auto;
@@ -328,6 +331,10 @@
         }
         p {
           color: $main-color1;
+        }
+        .btn-wrap {
+          width: 100%;
+          text-align: center;
         }
       }
       h2 {
