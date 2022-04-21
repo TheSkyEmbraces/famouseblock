@@ -8,11 +8,10 @@ const TOGGLE_CLASS = "btn-none-block";
 const btnClickFunction = () => {
   btn.addEventListener("click", () => {
     const seeMoreClass = seeMoreCont.classList.contains(TOGGLE_CLASS);
+    seeMoreCont.classList.toggle(TOGGLE_CLASS);
     if (!seeMoreClass) {
-      seeMoreCont.classList.add(TOGGLE_CLASS);
       btn.innerHTML = "See more";
     } else {
-      seeMoreCont.classList.remove(TOGGLE_CLASS);
       btn.innerHTML = "Close";
     }
   });

@@ -13,7 +13,7 @@ const headerHeight = headerTag.offsetHeight;
 
 const header = () => {
   if (window.pageYOffset >= headerHeight) {
-    headerTag.style.background = "#ffffff";
+    headerTag.style.background = "rgba(255, 255, 255, 1)";
     logo.setAttribute("src", "assets/images/logo.png");
     headerRight.classList.add("navAction");
     for (i = 0; i < mNavMenuBg.length; i++) {

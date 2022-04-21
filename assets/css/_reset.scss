@@ -89,12 +89,18 @@ video {
   box-sizing: border-box;
   outline: none;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   color: #565656;
 }
 
 body {
   line-height: 1;
+  width: 100%;
 }
 ol,
 ul {
